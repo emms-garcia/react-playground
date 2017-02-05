@@ -4,8 +4,7 @@
   "description": "Playground for initial react boilerplate",
   "scripts": {
     "start": "node index",
-    "build": "webpack --progress --colors",
-    "lint": "eslint src"
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
