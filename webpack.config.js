@@ -8,6 +8,7 @@ var buildPath = path.resolve(__dirname, 'public', 'build');
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: [
+        'webpack-hot-middleware/client?reload=true',
         'webpack/hot/only-dev-server',
         'materialize-loader!./materialize.config.js',
         javascriptEntryPath,

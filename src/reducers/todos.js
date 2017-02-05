@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 import {
-    TODO_ADD,
+    TODO_CREATE,
     TODO_REMOVE,
 } from '../actions/todos';
 
@@ -9,10 +9,14 @@ const initialState = {};
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case TODO_ADD:
+        case TODO_CREATE:
+            const todoID = _.uniqueId();
             return {
                 ...state,
-                [_.uniqueId()]: action.payload,
+                [todoID]: {
+                    id: todoID,
+                    name: action.payload,
+                },
             };
         case TODO_REMOVE:
             const newState = { ...state };

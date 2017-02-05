@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import Page from './Page';
 
 const HomePage = () => {
     return (
-        <Page header='Home Page'>
-            <h5>This is the Home Page</h5>
+        <Page>
+            <h2 className='center-align'>This is the Home Page</h2>
+            <h3 className='center-align'>
+                <Link to='/todo'>Try the Todo Page</Link>
+            </h3>
         </Page>
     );
 };

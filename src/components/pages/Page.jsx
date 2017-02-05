@@ -2,15 +2,10 @@ import React from 'react';
 
 import Navbar from '../Navbar';
 
-const Page = ({ children, header }) => {
+const Page = ({ children }) => {
     return (
         <div>
             <Navbar />
-            <section className='card-panel header teal lighten-2 row'>
-                <div className='col s6'>
-                    <h5 className='white-text'>{ header }</h5>
-                </div>
-            </section>
             <section className='card-panel content row'>
                 <div className='col s12'>
                     { children }
@@ -18,10 +13,6 @@ const Page = ({ children, header }) => {
             </section>
         </div>
     );
-};
-
-Page.propTypes = {
-    header: React.PropTypes.string.isRequired,
 };
 
 export default Page;
