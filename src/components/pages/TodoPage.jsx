@@ -21,10 +21,10 @@ class TodoPage extends Component {
                 <div className='row'>
                     <div className='input-field col s3'>
                         <input
-                            id='todo'
-                            type='text'
                             className='validate'
+                            id='todo'
                             onChange={(e) => this.setState({ text: e.target.value })}
+                            type='text'
                             value={this.state.text }
                         />
                         <label htmlFor='todo'>Todo</label>

@@ -7,9 +7,7 @@ const Page = ({ children }) => {
         <div>
             <Navbar />
             <section className='card-panel content row'>
-                <div className='col s12'>
-                    { children }
-                </div>
+                <div className='col s12'>{ children }</div>
             </section>
         </div>
     );

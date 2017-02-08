@@ -17,13 +17,8 @@ if (isDeveloping) {
         noInfo: true,
         quiet: false,
         lazy: false,
-        watchOptions: {
-            aggregateTimeout: 300,
-            poll: true
-        },
-        stats: {
-            colors: true,
-        }
+        watchOptions: { aggregateTimeout: 300, poll: true },
+        stats: { colors: true }
     });
 
     var bundlePath = path.join(__dirname, './public/build/index.html');
