@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const navRoutes = [
     { href: '/home', name: 'Home' },
@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className='nav-wrapper'>
-                <a href='' className='brand-logo center'>React Playground</a>
+                <div className='brand-logo center'>React Playground</div>
                 <ul className='right hide-on-med-and-down'>
                     {
                         navRoutes.map((route, idx) => {

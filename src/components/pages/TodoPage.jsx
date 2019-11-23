@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -7,9 +8,9 @@ import Page from './Page';
 
 class TodoPage extends Component {
     static propTypes = {
-        createTodo: React.PropTypes.func.isRequired,
-        removeTodo: React.PropTypes.func.isRequired,
-        todos: React.PropTypes.object.isRequired,
+        createTodo: PropTypes.func.isRequired,
+        removeTodo: PropTypes.func.isRequired,
+        todos: PropTypes.object.isRequired,
     };
 
     state = { text: '' };
